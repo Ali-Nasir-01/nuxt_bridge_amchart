@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs"
   },
   "dependencies": {
+    "@amcharts/amcharts4": "^4.10.23",
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
+    "nuxt-edge": "latest",
+    "std-env": "^3.0.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxt/bridge": "npm:@nuxt/bridge-edge@^3.0.0-27296423.f3082ca"
+  }
 }
